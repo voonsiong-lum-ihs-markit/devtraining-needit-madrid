@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <connect_queue/>
+        <description>Topic to allow users to view their open NeedIt records.</description>
+        <graph>{
+  "graph_api_version": "1.0.10",
+  "goals": {
+    "f51fd86a4e8d4a538ccfd7bf6dd9fb90": {
+      "id": "f51fd86a4e8d4a538ccfd7bf6dd9fb90",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "9f24828e2c494cfb88202956a69095ba": {
+          "id": "9f24828e2c494cfb88202956a69095ba",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "7460d43187c24207a4b6fe013af905ac": {
+          "id": "7460d43187c24207a4b6fe013af905ac",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "0e81de039a064533acfc4ece6d2773aa",
+          "edgeType": "Edge",
+          "source": "9f24828e2c494cfb88202956a69095ba",
+          "target": "7460d43187c24207a4b6fe013af905ac",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {}
+}</graph>
+        <key_phrases>View Open NeedIt Records,NeedIt Request,need something</key_phrases>
+        <live_agent>false</live_agent>
+        <name>View Open NeedIt Records</name>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-08 03:00:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0bf29c83dbc333007b411120399619f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>View Open NeedIt Records</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_0bf29c83dbc333007b411120399619f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-08 03:00:24</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=0bf29c83dbc333007b411120399619f2"/>
+</record_update>

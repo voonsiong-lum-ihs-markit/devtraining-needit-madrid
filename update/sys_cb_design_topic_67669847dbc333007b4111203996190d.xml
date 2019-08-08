@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__6b66d447ddc333003f65db80727ff013">23669847dbc333007b4111203996190b</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"f96512cb327447f1b14af185f1747e92","triggerType":"request","id":"f96512cb327447f1b14af185f1747e92"}],"goals":[{"name":"primary","trigger_id":"f96512cb327447f1b14af185f1747e92","nodes":[{"type":"StartGoal","goal_id":"f12f51f7223846368e6410ba2400d165","greeting_msg":{"type":"String","mode":"string","value":"I can help you find and update NeedIt records for a type of request."},"id":"f47394a875834994bb092a1ffb425fcc","name":"Start"},{"type":"TerminateGoal","goal_id":"f12f51f7223846368e6410ba2400d165","confirmation_msg":{"type":"String","mode":"string","value":"Ask again when you need to update other NeedIt records."},"id":"c8477ff398854c65b729de84fa2703f9","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","id":"47baaab6c3a4470ebe019a9a31ba7aa7","name":"NeedIt Type","goal_id":"f12f51f7223846368e6410ba2400d165","variable_id":"45e5e9d6b3284faeb3ab4aafce10d306","message":{"type":"String","mode":"string","value":"What type of NeedIt record would you like to view?"},"optional":false},{"type":"OutputPrompt","value":{"type":"String","mode":"string","value":"You selected: {{vaInputs.needit_type}}"},"id":"b470e89f52984c63b56335bb67b01846","name":"Confirm NeedIt Type","goal_id":"f12f51f7223846368e6410ba2400d165"},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"1713c004f4054b968c58dcf95d8f8cff","name":"NeedIt List","goal_id":"f12f51f7223846368e6410ba2400d165","variable_id":"c004adcad23d44ec957e95c27022436d","message":{"type":"String","mode":"string","value":"Select a NeedIt record to view"},"optional":false,"expression_mode":"simple","no_options_found_message":{"type":"String","mode":"string","value":"You have no open NeedIt records."},"condition":{"type":"Condition","mode":"glide_query","value":""}}],"edges":[{"type":"Edge","source_node_id":"47baaab6c3a4470ebe019a9a31ba7aa7","target_node_id":"b470e89f52984c63b56335bb67b01846","id":"61b42ced90064d648df46e6763e533b7"},{"type":"Edge","source_node_id":"f47394a875834994bb092a1ffb425fcc","target_node_id":"47baaab6c3a4470ebe019a9a31ba7aa7","id":"6222075f9ead4c2fb72cff02e9e1fc5c"},{"type":"Edge","source_node_id":"b470e89f52984c63b56335bb67b01846","target_node_id":"1713c004f4054b968c58dcf95d8f8cff","id":"66baf09850864693b59d080217c091f0"},{"type":"Edge","source_node_id":"1713c004f4054b968c58dcf95d8f8cff","target_node_id":"c8477ff398854c65b729de84fa2703f9","id":"982783fa1bc94de0869f6ec6f34efe84"}],"id":"f12f51f7223846368e6410ba2400d165"}],"script_variables":[],"glide_variables":[{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"hr"}],"id":"45e5e9d6b3284faeb3ab4aafce10d306","name":"needit_type"},{"type":"Reference","table":"sys_user","id":"current-user","name":"user"},{"type":"Reference","table":"x_58872_needit_needit","reference_qualifier_condition":"","id":"c004adcad23d44ec957e95c27022436d","name":"needit_list"}],"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","id":"791310c3dbc333007b41112039961974","name":"_PRVW__6b66d447ddc333003f65db80727ff013","key_phrases":["Update NeedIt Records","NeedIt Request"]}</design_definition>
+        <design_topic_id>791310c3dbc333007b41112039961974</design_topic_id>
+        <name>_PRVW__6b66d447ddc333003f65db80727ff013</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-08 03:15:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>67669847dbc333007b4111203996190d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_67669847dbc333007b4111203996190d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-08 03:15:27</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
